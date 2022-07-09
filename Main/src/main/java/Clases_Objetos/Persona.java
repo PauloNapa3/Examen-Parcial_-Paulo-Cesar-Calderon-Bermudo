@@ -1,6 +1,6 @@
 package Clases_Objetos;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -8,12 +8,14 @@ import java.util.Scanner;
  */
 public class Persona {
 //Atributos
+
     int DNI;
     String Nombre;
 //Metodo
-    public static void main(String[] args) {
-Persona persona1 = new Persona();
-persona1.DNI= 
-var consola = new Scanner(System.in);
+
+    public void LeerDatos() {
+        Persona persona1 = new Persona();
+        DNI = Integer.parseInt(JOptionPane.showInputDialog("Digite el DNI: "));
+        Nombre = JOptionPane.showInputDialog("Digite el nombre: ");
     }
 }
